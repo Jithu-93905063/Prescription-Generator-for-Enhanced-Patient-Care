@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Tips - Online Prescription Generator</title>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body */
+        body {
+            background-image: url('he.webp');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-content h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #333;
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Section Style */
+        .tips-category {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .tips-category h2 {
+            font-size: 24px;
+            color: #28a745;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .tips-category ul {
+            list-style: none;
+            flex: 1;
+        }
+
+        .tips-category ul li {
+            margin: 10px 0;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .tips-category:hover {
+            transform: translateY(-10px);
+        }
+
+        .tips-category .tips-image {
+            width: 260px;
+            height: 260px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+
+        /* Hover Effect on Tips */
+        .tips-category li:hover {
+            background-color: #e7f9e7;
+            padding-left: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Animation for Fade In */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .tips-category {
+                flex-direction: column;
+                padding: 15px;
+                align-items: flex-start;
+            }
+
+            .tips-category .tips-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .tips-category h2 {
+                font-size: 20px;
+            }
+
+            .main-content h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="health_tips.html"><i class="fas fa-heartbeat"></i> Health Tips</a></li>
+            <li><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            <li><a href="disease_control.html"><i class="fas fa-viruses"></i> Disease Control</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Healthy Tips for a Better Life</h1>
+
+        <!-- Nutrition Tips Section -->
+        <section class="tips-category">
+            <div class="tips-content">
+                <h2>Nutrition Tips</h2>
+                <ul>
+                    <li>Eat a variety of fruits and vegetables every day to ensure you're getting a wide range of nutrients.</li>
+                    <li>Drink plenty of water to stay hydrated, aiming for at least 8 cups a day.</li>
+                    <li>Limit sugary drinks like sodas and juices. Opt for water, herbal teas, or smoothies instead.</li>
+                    <li>Include protein-rich foods like lean meats, fish, eggs, legumes, and tofu to support muscle growth.</li>
+                    <li>Consume healthy fats from sources like nuts, seeds, avocados, and olive oil to boost brain health.</li>
+                    <li>Limit your intake of processed foods, fast food, and snacks high in salt, sugar, and unhealthy fats.</li>
+                    <li>Eat smaller meals more frequently to keep your metabolism active and stabilize blood sugar levels.</li>
+                    <li>Include whole grains like brown rice, oats, and quinoa in your diet instead of refined grains like white bread.</li>
+                    <li>Use herbs and spices such as garlic, ginger, and turmeric to enhance flavor without added salt or sugar.</li>
+                    <li>Be mindful of portion sizes and avoid overeating, especially at night.</li>
+                </ul>
+            </div>
+            <!-- Image for Nutrition Tips -->
+            <div class="tips-image" style="background-image: url('he.jpg');"></div>
+        </section>
+
+        <!-- Fitness Tips Section -->
+        <section class="tips-category">
+            <div class="tips-content">
+                <h2>Fitness Tips</h2>
+                <ul>
+                    <li>Engage in at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week.</li>
+                    <li>Incorporate strength training exercises twice a week to maintain and build muscle mass.</li>
+                    <li>Don't skip your warm-up and cool-down before and after workouts to prevent injuries.</li>
+                    <li>Take regular breaks from sitting—aim for 5 minutes of movement every hour if you're desk-bound.</li>
+                    <li>Try yoga or Pilates to improve flexibility, balance, and mental clarity.</li>
+                    <li>Start slow if you're new to exercise and gradually increase the intensity to avoid burnout or injury.</li>
+                    <li>Engage in outdoor activities like hiking, cycling, or swimming to enjoy nature while staying active.</li>
+                    <li>Mix up your workout routine to keep things interesting and challenge different muscle groups.</li>
+                    <li>Stay consistent with your fitness routine, even if it's just a short daily walk to maintain momentum.</li>
+                    <li>Use proper form and technique during exercises to maximize effectiveness and minimize risk of injury.</li>
+                </ul>
+            </div>
+            <!-- Image for Fitness Tips -->
+            <div class="tips-image" style="background-image: url('l.jpg');"></div>
+        </section>
+
+        <!-- Mental Health Tips Section -->
+        <section class="tips-category">
+            <div class="tips-content">
+                <h2>Mental Health Tips</h2>
+                <ul>
+                    <li>Practice mindfulness meditation to reduce stress and improve focus. Start with just 5-10 minutes daily.</li>
+                    <li>Take regular breaks throughout the day to prevent mental fatigue, especially when working or studying for long hours.</li>
+                    <li>Get at least 7-8 hours of sleep each night to promote mental clarity, emotional stability, and overall well-being.</li>
+                    <li>Engage in hobbies or creative activities like painting, writing, or playing music to relax and recharge.</li>
+                    <li>Stay connected with friends and family, whether in person or virtually, to foster meaningful relationships.</li>
+                    <li>Set realistic goals to help manage feelings of overwhelm, and celebrate small achievements along the way.</li>
+                    <li>Practice deep breathing or progressive muscle relaxation to calm your nervous system when feeling anxious.</li>
+                    <li>Limit your screen time, especially before bed, to reduce the impact of blue light on your sleep quality.</li>
+                    <li>Seek professional help from a therapist or counselor if you're experiencing ongoing feelings of anxiety, depression, or stress.</li>
+                    <li>Learn to say no when you're stretched too thin to avoid burnout and protect your mental health.</li>
+                </ul>
+            </div>
+            <!-- Image for Mental Health Tips -->
+            <div class="tips-image" style="background-image: url('b.jpg');"></div>
+        </section>
+
+        <!-- Healthy Lifestyle Tips Section -->
+        <section class="tips-category">
+            <div class="tips-content">
+                <h2>Healthy Lifestyle Tips</h2>
+                <ul>
+                    <li>Quit smoking or avoid exposure to secondhand smoke to improve lung and heart health.</li>
+                    <li>Use sunscreen with SPF 30 or higher every day to protect your skin from harmful UV rays.</li>
+                    <li>Stay hydrated by drinking water throughout the day, especially before and after exercise.</li>
+                    <li>Incorporate more walking into your daily routine—aim for 10,000 steps a day for better overall health.</li>
+                    <li>Reduce alcohol consumption to lower your risk of liver disease, high blood pressure, and certain cancers.</li>
+                    <li>Get regular checkups and screenings to catch health issues early and stay on top of your well-being.</li>
+                    <li>Prioritize mental and physical self-care by scheduling "me-time" for rest, relaxation, and recovery.</li>
+                    <li>Practice good hygiene, including washing hands regularly and brushing your teeth twice a day.</li>
+                    <li>Practice safe driving by wearing your seatbelt, adhering to speed limits, and avoiding distractions.</li>
+                    <li>Reduce stress by setting boundaries, asking for help when needed, and practicing time management skills.</li>
+                </ul>
+            </div>
+            <!-- Image for Healthy Lifestyle Tips -->
+            <div class="tips-image" style="background-image: url('d1.webp');"></div>
+        </section>
+
+    </div>
+</body>
+</html>

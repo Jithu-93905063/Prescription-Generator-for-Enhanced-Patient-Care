@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Online Prescription Generator</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            height: 100%;
+            background-image:url('2.webp');
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-image:url('wh.jpg');
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        .welcome h1, .welcome h2 {
+            font-size: 2.5rem;
+            color: #020b28;
+            margin-bottom: 20px;
+            animation: slideInDown 1s ease-out;
+        }
+
+        .welcome p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #100f0f;
+            margin-bottom: 20px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInDown {
+            0% { transform: translateY(-20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .welcome {
+                padding: 20px;
+            }
+
+            .welcome h1, .welcome h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="health_tips.html"><i class="fas fa-heartbeat"></i> Health Tips</a></li>
+            <li><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            <li><a href="disease_control.html"><i class="fas fa-viruses"></i> Disease Control</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="welcome">
+        <h1>About Us</h1>
+        <p>Welcome to the Online Prescription Generator. Our platform aims to provide users with easy access to prescription generation services, health tips, and expert advice. Our mission is to ensure that your health is always our priority!</p>
+        
+        <h2>Our Mission</h2>
+        <p>We aim to streamline the prescription process for doctors and patients, ensuring quick, accurate, and personalized medical recommendations. With a focus on accessibility, we want to make health services available at your fingertips.</p>
+
+        <h2>Our Team</h2>
+        <p>Our team consists of experienced doctors, health experts, and engineers working together to build a seamless experience for you. We are dedicated to providing trustworthy health solutions.</p>
+    </div>
+</body>
+</html>

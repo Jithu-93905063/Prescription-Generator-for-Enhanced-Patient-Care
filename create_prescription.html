@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Prescription</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h2>Create Prescription</h2>
+    <form action="create_prescription.php" method="POST">
+        <div class="form-group">
+            <label for="patient_id">Patient ID:</label>
+            <input type="text" class="form-control" id="patient_id" name="patient_id" required>
+        </div>
+        <div class="form-group">
+            <label for="medication">Medication:</label>
+            <input type="text" class="form-control" id="medication" name="medication" required>
+        </div>
+        <div class="form-group">
+            <label for="dosage">Dosage:</label>
+            <input type="text" class="form-control" id="dosage" name="dosage" required>
+        </div>
+        <div class="form-group">
+            <label for="duration">Duration:</label>
+            <input type="text" class="form-control" id="duration" name="duration" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Create Prescription</button>
+    </form>
+</div>
+</body>
+</html>

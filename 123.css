@@ -1,0 +1,132 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    background: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Main Content Section */
+.welcome {
+    text-align: center;
+    z-index: 10;
+    position: relative;
+    padding-top: 100px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.welcome h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 18px;
+}
+
+.welcome a {
+    color: #00bcd4;
+}
+
+/* Background Animation */
+body {
+   
+    background-size: cover;
+    animation: backgroundMove 30s infinite linear;
+}
+
+/* Keyframes for Background Movement */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Fade In Animation for Welcome Section */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #00bcd4;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

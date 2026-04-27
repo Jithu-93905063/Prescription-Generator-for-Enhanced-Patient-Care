@@ -1,0 +1,179 @@
+
+<html >
+<head>
+    
+    <title>Online Prescription Generator</title>
+  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Background Image Animation */
+        body {
+            background-image: url('dna.webp');
+            background-size: cover;
+            background-position: center;
+            animation: moveBackground 5s linear infinite;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0.6, 0.9);
+            padding: 20px 0;
+            z-index: 10;
+            animation: slideInNav 1s ease-out;
+        }
+
+        @keyframes slideInNav {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(0); }
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+            transform: scale(1.1);
+        }
+
+        /* Welcome Section */
+        .welcome {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            
+        }
+
+        .welcome h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: slideUp 2s ease-out;
+        }
+
+        .welcome p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .welcome a {
+            color: #f39c12;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .welcome a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: white;
+            opacity: 0;
+            animation: fadeInFooter 2s ease-out 1s forwards;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation Effects */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInFooter {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar with Icons -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="health_tips.html"><i class="fas fa-heartbeat"></i> Health Tips</a></li>
+            <li><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            <li><a href="disease_control.html"><i class="fas fa-viruses"></i> Disease Control</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="welcome">
+        <h1>Your health is our priority.</h1>
+        <p>Welcome to the Online Prescription Generator. <a href="registration.html">Register</a> or <a href="login.html">log in</a> to get started!</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Online Medication and Health Services. All rights reserved. Contact us at <a href="mailto:1234@example.com">1234@example.com</a></p>
+    </footer>
+</body>
+</html>
